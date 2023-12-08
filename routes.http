@@ -1,0 +1,31 @@
+POST http://localhost:3333/local
+Content-Type: application/json
+
+{
+    "local": "IFMS 01",
+    "convite": "covite 01",
+    "nconvidados": "400"
+}
+
+###
+
+GET http://localhost:3333/local
+
+###
+
+GET http://localhost:3333/local?search=IFMS
+
+###
+
+PUT http://localhost:3333/local/379c2999-bf82-4781-999a-f84ddb3ba4db
+Content-Type: application/json
+
+{
+    "local": "IFMS",
+    "convite": "familia",
+    "nconvidados": "100"
+}
+
+###
+
+DELETE http://localhost:3333/local/379c2999-bf82-4781-999a-f84ddb3ba4db
